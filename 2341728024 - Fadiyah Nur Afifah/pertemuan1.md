@@ -8,7 +8,7 @@
 ![](./ss%20iot/prak2.png)
 3. kemudian cari file yang sudah di download
 ![](./ss%20iot/prak3.png)
-4. lalu jika sudah pilih close
+4. lalu jika sudah pilih close <br>
 ![](./ss%20iot/prak4.jpg)
 
 5. kemudian buka menu dan pilih Tools > Board Manager > NodeMCU 1.0 (ESP-12E Module)
@@ -19,11 +19,10 @@
 
 7. lalu jalankan blink, jika sudah dijalankan maka run yang akan menghasilkan
 ![](./ss%20iot/prak7.jpg)
-<br>
-    yang dari lampu nya mati 
+
+ - yang dari lampu nya mati 
     <br>
- ![](./ss%20iot/prak8.png)
- <br>
-    hingga lampu menjadi menyala
+   ![](./ss%20iot/prak8.png)
+ - hingga lampu menjadi menyala
     <br>
- ![](./ss%20iot/prak9.png)
+   ![](./ss%20iot/prak9.png)
