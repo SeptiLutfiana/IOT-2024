@@ -20,8 +20,7 @@ Pada project ketiga ini akan dilakukan percobaan untuk menyalakan lebih dari sat
 1.	Buatlah project ketiga dengan nama file proyek sos
 
 2.	Selanjutnya tuliskan kode program berikut <br>
-   ![](./ss%20iot/proyek-sos-1.PNG)
-   <br>
+   ![](./ss%20iot/proyek-sos-1.PNG) <br>
    ![](./ss%20iot/proyek-sos-2.PNG)
 
 3. Lalu hasilnya akan seperti dibawah ini <br>
@@ -32,8 +31,7 @@ Pada project ketiga ini akan dilakukan percobaan untuk menyalakan lebih dari sat
    ![](./ss%20iot/proyek-suhu-1.png)
 
 2.	Kemudian kode program dibawah ini <br>
-   ![](./ss%20iot/proyek-suhu-2.png)
-   <br>
+   ![](./ss%20iot/proyek-suhu-2.png) <br>
    ![](./ss%20iot/proyek-suhu-2-lanjutan-syntaxxx.png)
 
 3.	Kemudian berikut ini hasil nya  <br>
