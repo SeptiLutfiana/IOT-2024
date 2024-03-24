@@ -27,5 +27,7 @@
     yang dari lampu nya mati 
     <br>
  ![](./ss%20iot/prak8.png)
+ <br>
     hingga lampu menjadi menyala
+    <br>
  ![](./ss%20iot/prak9.png)
