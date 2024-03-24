@@ -42,9 +42,7 @@
 
 Result :
 
- ![](Pics/SS1-4.png)
- ![](Pics/SS2-4.png)
- ![](Pics/SS3-4.png)
+ ![](Pics/RGB%20LED.mp4)
 
 
 # SOS
@@ -100,6 +98,8 @@ Result :
     // wait 5 seconds before repeating the SOS signal
     delay(5000);
     }
+
+ ![](Pics/SOS%20LED.mp4)
 
 # Tugas 
 
@@ -218,4 +218,6 @@ Result :
     delay(5000);
     }
 
-- Hasil ada di ZIP
+- Hasil
+
+![](Pics/Tugas.mp4)
