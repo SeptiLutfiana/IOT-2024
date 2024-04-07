@@ -9,7 +9,6 @@
 3. masukkan code perintah untuk dapat menjalankan proyek <br>
 ![](./ss%20iot/prak_ldr.PNG)
 4. Kemudian jika semua sudah di konfigurasikan semua kita run kan <br>
-Video pertama : ini sensor kena senter, angkanya bakal 10 <br>
-![](./ss%20iot/ini%20sensor%20kena%20senter,%20angkanya%20bakal 10.mp4)
+Video pertama : ini sensor kena senter, angkanya bakal 10 <br> dan 
 Video yang kedua : ini ditutup sensornya bakal turun angkanya <br>
-![](./ss%20iot/ini_ditutup_sensornya_bakal_turun_angkanya.mp4)
+ada di link yang dapat di akses di samping ini: https://drive.google.com/drive/folders/1E4bTxqfKHoZHcmqPgNJHpkS7ZfRBj3tD?usp=sharing
