@@ -10,6 +10,6 @@
 ![](./ss%20iot/prak_ldr.PNG)
 4. Kemudian jika semua sudah di konfigurasikan semua kita run kan <br>
 Video pertama : ini sensor kena senter, angkanya bakal 10 <br>
-[<video controls src="ini sensor kena senter, angkanya bakal 10.mp4" title="Title"></video>](https://drive.google.com/file/d/187HYXjMG5PoDc_l5JerB2jLNvsOQ9I_6/view?usp=drive_link) <br>
+https://github.com/SeptiLutfiana/IOT-2024/assets/124948473/8a15876b-0762-43c9-a38f-9c1a799adede
 Video yang kedua : ini ditutup sensornya bakal turun angkanya <br>
 <video controls src="ini_ditutup_sensornya_bakal_turun_angkanya.mp4" title="Title"></video>
