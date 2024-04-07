@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "zul qaaidah",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s2-devkitm-1",
+      "id": "esp",
+      "top": -61.91,
+      "left": -110.63,
+      "attrs": {}
+    },
+    { "type": "wokwi-rgb-led", "id": "rgb1", "top": -101.6, "left": -238.9, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "rgb1:COM", "esp:5V", "green", [ "v0" ] ],
+    [ "rgb1:R", "esp:5", "green", [ "v0" ] ],
+    [ "rgb1:G", "esp:6", "green", [ "v0" ] ],
+    [ "rgb1:B", "esp:7", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
