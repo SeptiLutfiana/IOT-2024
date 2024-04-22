@@ -1,62 +1,37 @@
 #include <Arduino.h>
 
-#define RED_LED_PIN 6    // Pin LED merah
-#define GREEN_LED_PIN 5  // Pin LED RGB (hijau)
-#define BLUE_LED_PIN 4   // Pin LED biru (ESP32)
+#define RED_LED 6 // Led warna merah
+#define GREEN_LED 5 // Led warna hijau
+#define BLUE_LED 2 // Led warna biru
 
-void setup()
-{
+void setup() {
   Serial.begin(115200);
-  pinMode(RED_LED_PIN, OUTPUT);    // Atur pin digital sebagai output
-  pinMode(GREEN_LED_PIN, OUTPUT);  // Atur pin digital sebagai output
-  pinMode(BLUE_LED_PIN, OUTPUT);   // Atur pin digital sebagai output
-
-  Serial.println("Contoh Program LED SOS");
+  pinMode(RED_LED, OUTPUT); // Atur pin-pin digital sebagai output
+  pinMode(GREEN_LED, OUTPUT);
+  pinMode(BLUE_LED, OUTPUT);
+  Serial.println("Contoh Program LED RGB");
 }
 
-void loop()
-{
-  // 3 dits (3 titik atau huruf S) pada LED merah
-  for (int x = 0; x < 3; x++)
-  {
-    digitalWrite(RED_LED_PIN, HIGH);    // LED merah nyala
-    delay(150);                         // Delay selama 150ms
-    digitalWrite(RED_LED_PIN, LOW);     // LED merah mati
-    delay(100);                         // Delay selama 100ms
-  }
-  delay(100);
+void rgbLED() {
+  digitalWrite(RED_LED, HIGH);
+  digitalWrite(GREEN_LED, LOW);
+  digitalWrite(BLUE_LED, LOW);
+  Serial.println("LED Merah nyala");
+  delay(1000);
 
-  // 3 dahs (3 garis atau huruf O) pada LED merah
-  for (int x = 0; x < 3; x++)
-  {
-    digitalWrite(RED_LED_PIN, HIGH);    // LED merah nyala
-    delay(400);                         // Delay selama 400ms
-    digitalWrite(RED_LED_PIN, LOW);     // LED merah mati
-    delay(100);                         // Delay selama 100ms
-  }
+  digitalWrite(RED_LED, LOW);
+  digitalWrite(GREEN_LED, HIGH);
+  digitalWrite(BLUE_LED, LOW);
+  Serial.println("LED Hijau nyala");
+  delay(1000);
 
-  // 100ms delay untuk memberikan jarak antar huruf
-  delay(100);
+  digitalWrite(RED_LED, LOW);
+  digitalWrite(GREEN_LED, LOW);
+  digitalWrite(BLUE_LED, HIGH);
+  Serial.println("LED Biru nyala");
+  delay(1000);
+}
 
-  // 3 dits lagi (3 titik atau huruf S) pada LED merah
-  for (int x = 0; x < 3; x++)
-  {
-    digitalWrite(RED_LED_PIN, HIGH);    // LED merah nyala
-    delay(150);                         // Delay selama 150ms
-    digitalWrite(RED_LED_PIN, LOW);     // LED merah mati
-    delay(100);                         // Delay selama 100ms
-  }
-
-  // Mengontrol LED RGB (hijau)
-  digitalWrite(GREEN_LED_PIN, HIGH);    // Hidupkan LED hijau
-  delay(1500);                          // Delay selama 1.5 detik
-  digitalWrite(GREEN_LED_PIN, LOW);     // Matikan LED hijau
-
-  // Mengontrol LED biru pada ESP32
-  digitalWrite(BLUE_LED_PIN, HIGH);     // Hidupkan LED biru
-  delay(1500);                          // Delay selama 1.5 detik
-  digitalWrite(BLUE_LED_PIN, LOW);      // Matikan LED biru
-
-  // Tunggu 5 detik sebelum mengulangi sinyal SOS
-  delay(5000);
+void loop() {
+  rgbLED();
 }
