@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "author": "Muhammad Bagas Ramadhan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp1", "top": 119.9, "left": 110.2, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -3.6,
+      "left": 416.6,
+      "attrs": { "color": "blue" }
+    },
+    { "type": "wokwi-led", "id": "led2", "top": -3.6, "left": 339.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -3.6,
+      "left": 493.4,
+      "attrs": { "color": "limegreen" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 198.4,
+      "left": 284,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 99.95,
+      "left": 268.8,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 38.7,
+      "left": -101.4,
+      "attrs": { "temperature": "19.6" }
+    }
+  ],
+  "connections": [
+    [ "led2:C", "r1:2", "black", [ "v0" ] ],
+    [ "led1:C", "r1:2", "black", [ "v0" ] ],
+    [ "led3:C", "r1:2", "black", [ "v0" ] ],
+    [ "r1:1", "esp1:GND.2", "black", [ "h-211.2", "v163.3" ] ],
+    [ "led2:A", "esp1:D27", "red", [ "v9.6", "h-297.6", "v182.7" ] ],
+    [ "led1:A", "esp1:D26", "gold", [ "v28.8", "h-364.8", "v153.7" ] ],
+    [ "led3:A", "esp1:D25", "green", [ "v48", "h-432", "v124.8" ] ],
+    [ "lcd1:SCL", "esp1:D22", "white", [ "h-57.6", "v-105" ] ],
+    [ "lcd1:SDA", "esp1:D21", "gray", [ "h-48", "v-66.6" ] ],
+    [ "lcd1:VCC", "esp1:3V3", "cyan", [ "h-38.4", "v38.5" ] ],
+    [ "lcd1:GND", "esp1:GND.1", "black", [ "h-28.8", "v38.5" ] ],
+    [ "dht1:GND", "esp1:GND.1", "black", [ "v0" ] ],
+    [ "dht1:SDA", "esp1:D21", "blue", [ "v0" ] ],
+    [ "dht1:VCC", "esp1:3V3", "cyan", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
